@@ -9,7 +9,11 @@ export function ProvideAuth({ children }) {
     const loginSuccessful =
       email === process.env.AUTH_EMAIL &&
       password === process.env.AUTH_PASSWORD;
-    if (loginSuccessful) setUser({ email });
+    if (loginSuccessful) {
+      setUser({ email });
+    } else {
+      throw new Error('invalid login credentials');
+    }
     return loginSuccessful;
   };
 
