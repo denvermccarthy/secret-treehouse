@@ -44,7 +44,12 @@ export default function Login() {
         className={styles.loginForm}
       >
         <label htmlFor="email">Email</label>
-        <input id="email" value={formState.email} name="email" type="email" />
+        <input
+          id="email"
+          value={formState.email}
+          name="email"
+          type="email"
+        />{' '}
         <label htmlFor="password">Password</label>
         <input
           id="password"
