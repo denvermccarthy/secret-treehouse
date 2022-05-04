@@ -1,4 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 
 // A wrapper for <Route> that redirects to the login
